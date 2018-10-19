@@ -16,6 +16,9 @@ var app = new Framework7({
     }, {
         path: '/home/',
         url: 'index.html'
+    }, {
+        path: '/login/',
+        url: 'loginScreen.html'
     }],
     // ... other parameters
 });

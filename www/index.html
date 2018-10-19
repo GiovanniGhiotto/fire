@@ -23,6 +23,9 @@
     <!-- Your app title -->
     <title>Fire</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 
 <body class="color-theme-black">
@@ -46,9 +49,12 @@
                 <!-- Toolbar -->
                 <div class="toolbar toolbar-bottom-md tabbar">
                     <div class="toolbar-inner">
-                        <a href="#home" class="tab-link tab-link-active">Home</a>
-                        <a href="#mapTab" class="tab-link">Map</a>
-                        <a href="#personal" class="tab-link">Your posts</a>
+                        <a href="#home" class="tab-link tab-link-active"><i class="material-icons">home</i>
+                        </a>
+                        <a href="#mapTab" class="tab-link"><i class="material-icons">map</i></a>
+                        <a href="#" class="tab-link"><i class="material-icons">add</i></button>
+                        <a href="#personal" class="tab-link"><i class="material-icons">perm_identity</i></a>
+                        <a href="#settings" class="tab-link"><i class="material-icons">settings</i></a>
                     </div>
                 </div>
                 <div id="tabs-container" class="tabs-swipeable-wrap">
@@ -90,9 +96,6 @@
                                 </div>
                                 <div class="card-footer"><a href="/about/" class="link">Details</a></div>
                             </div>
-                            <div class="block">
-
-                            </div>
                         </div>
                         <div id="mapTab" class="page-content tab swiper-no-swiping">
                             <div id="map_canvas">
@@ -102,6 +105,16 @@
                         <div id="personal" class="page-content tab">
                             <div class="block">
 
+                            </div>
+                        </div>
+                        <div id="settings" class="page-content tab">
+                            <div class="block">
+                                
+                                <!-- Ghiotto qua metti la pagina di impostazioni!!!! -->
+
+
+                                <!-- Usa questo link per il pulsante di Login-->
+                                <a href="/login/" class="button">Login</a>
                             </div>
                         </div>
                     </div>
