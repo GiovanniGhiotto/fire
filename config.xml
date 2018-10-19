@@ -29,6 +29,7 @@
         <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDFoKox77-7dFBBUBIUG2OBmCZpU-_JoMA" />
         <variable name="API_KEY_FOR_IOS" value="AIzaSyDFoKox77-7dFBBUBIUG2OBmCZpU-_JoMA" />
     </plugin>
+    <plugin name="onesignal-cordova-plugin" spec="^2.4.1" source="npm" />
     <engine name="ios" spec="^4.5.5" />
     <engine name="android" spec="^7.0.0" />
     <engine name="browser" spec="~5.0.4" />

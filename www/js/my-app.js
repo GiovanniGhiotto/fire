@@ -62,7 +62,7 @@ document.addEventListener("deviceready", function () {
         'API_KEY_FOR_BROWSER_DEBUG': '' // If key is empty or unset,
         // the maps plugin runs under the development mode.
     });
-    
+
     var options = {
         camera: {
             target: {
@@ -85,4 +85,15 @@ document.addEventListener("deviceready", function () {
             bearing: 140
         });
     });
-});
+
+    window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+  
+    var notificationOpenedCallback = function(jsonData) {
+        console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+    };
+
+    window.plugins.OneSignal
+        .startInit("953cc4b1-3127-4368-8e1f-794bd44dc60c")
+        .handleNotificationOpened(notificationOpenedCallback)
+        .endInit();
+}, false);
