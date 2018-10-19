@@ -62,7 +62,7 @@ window.onload = function () {
         'API_KEY_FOR_BROWSER_DEBUG': '' // If key is empty or unset,
         // the maps plugin runs under the development mode.
     });
-
+    app.dialog.alert($$("#map_canvas").height());
     var options = {
         camera: {
             target: {
