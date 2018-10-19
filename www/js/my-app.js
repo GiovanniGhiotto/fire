@@ -56,7 +56,7 @@ $$(".report").each(function () {
     });
 });
 
-window.onload = function () {
+document.addEventListener("deviceready", function () {
     plugin.google.maps.environment.setEnv({
         'API_KEY_FOR_BROWSER_RELEASE': 'AIzaSyDFoKox77-7dFBBUBIUG2OBmCZpU-_JoMA',
         'API_KEY_FOR_BROWSER_DEBUG': '' // If key is empty or unset,
@@ -85,4 +85,4 @@ window.onload = function () {
             bearing: 140
         });
     });
-};
+});
